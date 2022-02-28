@@ -28,4 +28,6 @@ Everything is open-source, virus-free
 
 ![IMG2](https://github.com/mkhamster/AXplus2/blob/main/IMAGES/ALPHA_IMG2.png)
 
+![IMG3](https://github.com/mkhamster/AXplus2/blob/main/IMAGES/ALPHA_IMG3.png)
+
 
