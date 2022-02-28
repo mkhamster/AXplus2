@@ -24,4 +24,8 @@ If the developer does not want this tool to exist, it can be removed on request
 
 Everything is open-source, virus-free
 
-https://github.com/mkhamster/AXplus2/blob/main/IMAGES/ALPHA_IMG1.png
+![IMG1](https://github.com/mkhamster/AXplus2/blob/main/IMAGES/ALPHA_IMG1.png)
+
+![IMG2](https://github.com/mkhamster/AXplus2/blob/main/IMAGES/ALPHA_IMG2.png)
+
+
