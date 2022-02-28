@@ -23,3 +23,11 @@ This only changes the appearance of the map and does not affect gameplay
 If the developer does not want this tool to exist, it can be removed on request
 
 Everything is open-source, virus-free
+
+![IMG1](https://github.com/mkhamster/AXplus2/blob/main/IMAGES/ALPHA_IMG1.png)
+
+![IMG2](https://github.com/mkhamster/AXplus2/blob/main/IMAGES/ALPHA_IMG2.png)
+
+![IMG3](https://github.com/mkhamster/AXplus2/blob/main/IMAGES/ALPHA_IMG3.png)
+
+
