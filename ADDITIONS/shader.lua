@@ -1,0 +1,30 @@
+local newCC = Instance.new("ColorCorrectionEffect")
+		newCC.Contrast = 0.1
+		newCC.Saturation = 0.1
+		newCC.Enabled = true
+		newCC.TintColor = Color3.fromRGB(244, 255, 219)
+		newCC.Parent = game.Lighting
+		local newSky = Instance.new("Sky")
+		newSky.CelestialBodiesShown = false
+		newSky.SkyboxBk = "rbxassetid://784379716"
+		newSky.SkyboxDn = "rbxassetid://784380579"
+		newSky.SkyboxFt = "rbxassetid://784380169"
+		newSky.SkyboxLf = "rbxassetid://784379965"
+		newSky.SkyboxRt = "rbxassetid://784379561"
+		newSky.SkyboxUp = "rbxassetid://784380402"
+		newSky.Parent = game.Lighting
+		local newDOF = Instance.new("DepthOfFieldEffect")
+		newDOF.Enabled = true
+		newDOF.FarIntensity = 0.095
+		newDOF.FocusDistance = 0.05
+		newDOF.InFocusRadius = 45
+		newDOF.NearIntensity = 0.75
+		newDOF.Parent = game.Lighting
+		
+		game.Workspace.Terrain.Clouds.Density = 0.053
+		game.Workspace.Terrain.Clouds.Cover = 0.53
+		
+		game.Lighting.Brightness = 3.37
+		game.Lighting.Ambient = Color3.new(0,0,0)
+		game.Lighting.OutdoorAmbient = Color3.fromRGB(49,49,58)
+		game.Lighting.ExposureCompensation = 0.41
