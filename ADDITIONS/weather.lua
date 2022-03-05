@@ -142,6 +142,6 @@ while true do
 		wait(45)
 		unslippery()
 		--58, 54, 40]]
-	end
+	--end
 	wait(200)
 end
