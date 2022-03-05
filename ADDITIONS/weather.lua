@@ -17,8 +17,8 @@ end
 
 
 while true do
-	local mr = math.random(1,4)
-	if mr == 3 then
+	--local mr = math.random(1,4)
+	--if mr == 3 then
 		local tweenInfo = TweenInfo.new(
 			20, 
 			Enum.EasingStyle.Linear, 
@@ -79,7 +79,7 @@ while true do
 		local tween6 = game:GetService("TweenService"):Create(game.Workspace["AX+2"].TerrainValues.SandColor, tweenInfo, {Value = Color3.fromRGB(99, 87, 66)})
 		local tween7 = game:GetService("TweenService"):Create(game.Workspace["AX+2"].TerrainValues.GrassColor, tweenInfo, {Value = Color3.fromRGB(78, 85, 66)})
 		tween3:Play() tween4:Play() tween5:Play() tween6:Play() tween7:Play()
-	elseif mr == 1 or mr ==2 or mr == 4 then
+	--[[elseif mr == 1 or mr ==2 or mr == 4 then
 		local tweenInfo = TweenInfo.new(
 			20, 
 			Enum.EasingStyle.Linear, 
@@ -141,7 +141,7 @@ while true do
 		tween3:Play() tween4:Play() tween5:Play() tween6:Play() tween7:Play()
 		wait(45)
 		unslippery()
-		--58, 54, 40
+		--58, 54, 40]]
 	end
 	wait(200)
 end
