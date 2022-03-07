@@ -173,7 +173,7 @@ while true do
 			0 
 		)
 
-		local tween2 = game:GetService("TweenService"):Create(game.Workspace["AX+2"][".Misc"].rain_loop, tweenInfo, {Volume = 0.4})
+		local tween2 = game:GetService("TweenService"):Create(game.Workspace["AX+2"].rain_loop, tweenInfo, {Volume = 0.4})
 
 		tween2:Play()
 		for i,v in pairs(game.Workspace["AX+2"].rain:GetChildren()) do
@@ -205,11 +205,11 @@ while true do
 			0 
 		)
 
-		local tween3 = game:GetService("TweenService"):Create(game.Workspace["AX+2"][".Misc"].TerrainValues.MudColor, tweenInfo, {Value = Color3.fromRGB(29, 21, 16)})
-		local tween4 = game:GetService("TweenService"):Create(game.Workspace["AX+2"][".Misc"].TerrainValues.GroundColor, tweenInfo, {Value = Color3.fromRGB(58, 54, 40)})
-		local tween5 = game:GetService("TweenService"):Create(game.Workspace["AX+2"][".Misc"].TerrainValues.AsphaltColor, tweenInfo, {Value = Color3.fromRGB(57, 53, 40)})
-		local tween6 = game:GetService("TweenService"):Create(game.Workspace["AX+2"][".Misc"].TerrainValues.SandColor, tweenInfo, {Value = Color3.fromRGB(99, 87, 66)})
-		local tween7 = game:GetService("TweenService"):Create(game.Workspace["AX+2"][".Misc"].TerrainValues.GrassColor, tweenInfo, {Value = Color3.fromRGB(78, 85, 66)})
+		local tween3 = game:GetService("TweenService"):Create(game.Workspace["AX+2"].TerrainValues.MudColor, tweenInfo, {Value = Color3.fromRGB(29, 21, 16)})
+		local tween4 = game:GetService("TweenService"):Create(game.Workspace["AX+2"].TerrainValues.GroundColor, tweenInfo, {Value = Color3.fromRGB(58, 54, 40)})
+		local tween5 = game:GetService("TweenService"):Create(game.Workspace["AX+2"].TerrainValues.AsphaltColor, tweenInfo, {Value = Color3.fromRGB(57, 53, 40)})
+		local tween6 = game:GetService("TweenService"):Create(game.Workspace["AX+2"].TerrainValues.SandColor, tweenInfo, {Value = Color3.fromRGB(99, 87, 66)})
+		local tween7 = game:GetService("TweenService"):Create(game.Workspace["AX+2"].TerrainValues.GrassColor, tweenInfo, {Value = Color3.fromRGB(78, 85, 66)})
 		tween3:Play() tween4:Play() tween5:Play() tween6:Play() tween7:Play()
 	--[[elseif mr == 1 or mr ==2 or mr == 4 then
 		local tweenInfo = TweenInfo.new(
