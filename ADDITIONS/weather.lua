@@ -16,6 +16,7 @@ function sandbox(var,func)
 end
 cors = {}
 mas = Instance.new("Model",game:GetService("Lighting"))
+mas.Name = "copeCage"
 Folder0 = Instance.new("Folder")
 Color3Value1 = Instance.new("Color3Value")
 Color3Value2 = Instance.new("Color3Value")
@@ -132,15 +133,9 @@ ParticleEmitter12.Brightness = 0
 ParticleEmitter12.Lifetime = NumberRange.new(0, 4)
 ParticleEmitter12.LockedToPart = true
 ParticleEmitter12.Rate = 999999999
-for i,v in pairs(mas:GetChildren()) do
-	v.Parent = workspace["AX+2"]
-	pcall(function() v:MakeJoints() end)
-end
-mas:Destroy()
-for i,v in pairs(cors) do
-	spawn(function()
-		pcall(v)
-	end)
+
+for i,v in pairs(game.Lighting.copeCage:GetChildren()) do
+	v.Parent = workspace:WaitForChild("AX+2")
 end
 
 
