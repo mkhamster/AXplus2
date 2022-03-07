@@ -26,10 +26,15 @@ Color3Value5 = Instance.new("Color3Value")
 Sound6 = Instance.new("Sound")
 Part7 = Instance.new("Part")
 ParticleEmitter8 = Instance.new("ParticleEmitter")
+ParticleEmitter8.Name = "PEM8"
 ParticleEmitter9 = Instance.new("ParticleEmitter")
+ParticleEmitter9.Name = "PEM9"
 ParticleEmitter10 = Instance.new("ParticleEmitter")
+ParticleEmitter10.Name = "PEM10"
 ParticleEmitter11 = Instance.new("ParticleEmitter")
+ParticleEmitter11.Name = "PEM11"
 ParticleEmitter12 = Instance.new("ParticleEmitter")
+ParticleEmitter12.Name = "PEM12"
 Folder0.Name = "TerrainValues"
 Folder0.Parent = mas
 Color3Value1.Name = "MudColor"
@@ -176,11 +181,11 @@ while true do
 		local tween2 = game:GetService("TweenService"):Create(game.Workspace["AX+2"].rain_loop, tweenInfo, {Volume = 0.4})
 
 		tween2:Play()
-		for i,v in pairs(game.Workspace["AX+2"].rain:GetChildren()) do
-			v.Enabled = true
-			wait(1)
-		end
-		
+		game.Workspace["AX+2"].rain.PEM8.Enabled = true
+		game.Workspace["AX+2"].rain.PEM9.Enabled = true
+		game.Workspace["AX+2"].rain.PEM10.Enabled = true
+		game.Workspace["AX+2"].rain.PEM11.Enabled = true
+		game.Workspace["AX+2"].rain.PEM12.Enabled = true
 		local tweenInfo = TweenInfo.new(
 			6, 
 			Enum.EasingStyle.Linear, 
