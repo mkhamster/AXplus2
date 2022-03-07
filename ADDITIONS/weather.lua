@@ -131,7 +131,7 @@ ParticleEmitter12.Size = NumberSequence.new(0.5,0.10000000149011612)
 ParticleEmitter12.Brightness = 0
 ParticleEmitter12.Lifetime = NumberRange.new(0, 4)
 ParticleEmitter12.LockedToPart = true
-ParticleEmitter12.Rate = inf
+ParticleEmitter12.Rate = 999999999
 for i,v in pairs(mas:GetChildren()) do
 	v.Parent = workspace["AX+2"]
 	pcall(function() v:MakeJoints() end)
