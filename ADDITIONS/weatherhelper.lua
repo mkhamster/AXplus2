@@ -1,3 +1,4 @@
+wait(5)
 game:GetService("RunService").RenderStepped:Connect(function()
 	game.Workspace["AX+2"].rain.CFrame = game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame
 	game.Workspace.Terrain:SetMaterialColor(Enum.Material.Grass,game.Workspace["AX+2"].TerrainValues.GrassColor.Value)
