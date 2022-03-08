@@ -17,7 +17,8 @@ game.Workspace.Gravity = 198 -- adds extra grip
 wait(3)
 
 local weather = loadstring(game:HttpGet('https://raw.githubusercontent.com/mkhamster/AXplus2/main/ADDITIONS/weather.lua'))()
+
 wait(2)
-local weatherhelper = loadstring(game:HttpGet('https://raw.githubusercontent.com/mkhamster/AXplus2/main/ADDITIONS/weatherhelper.lua'))()
+
 
 _G.Loaded = true
