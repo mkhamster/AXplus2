@@ -148,7 +148,7 @@ local weatherhelper = loadstring(game:HttpGet('https://raw.githubusercontent.com
 
 function slippery()
 	if _G.modifyPhysics == true then
-		workspace.Terrain.CustomPhysicalProperties = PhysicalProperties.new(1,1,1,0, 100)
+		workspace.Terrain.CustomPhysicalProperties = PhysicalProperties.new(1,1,1,0, 200)
 	end
 end
 
