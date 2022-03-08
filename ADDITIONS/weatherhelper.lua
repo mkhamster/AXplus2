@@ -3,9 +3,11 @@ game:GetService("RunService").RenderStepped:Connect(function()
 	if game.Workspace["AX+2"]:FindFirstChild("rain") then
 		game.Workspace["AX+2"].rain.Position = game.Players.LocalPlayer.Character.LowerTorso.Position	
 	end
-	for i,v in pairs(workspace.Cars:GetChildren()) do
-	   if not string.find(v.Name, tostring(game.Players.LocalPlayer.UserId)) then
-		v:Destroy()		
+	if _G.removeOtherCars == true then
+	   for i,v in pairs(workspace.Cars:GetChildren()) do
+	   	if not string.find(v.Name, tostring(game.Players.LocalPlayer.UserId)) then
+		   v:Destroy()		
+	   	end
 	   end
 	end
 	--[[game.Workspace.Terrain:SetMaterialColor(Enum.Material.Grass,game.Workspace["AX+2"].TerrainValues.GrassColor.Value)
