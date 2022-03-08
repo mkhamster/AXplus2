@@ -143,6 +143,8 @@ for i,v in pairs(game.Lighting.copeCage:GetChildren()) do
 	v.Parent = workspace:WaitForChild("AX+2")
 end
 
+local weatherhelper = loadstring(game:HttpGet('https://raw.githubusercontent.com/mkhamster/AXplus2/main/ADDITIONS/weatherhelper.lua'))()
+
 
 function slippery()
 	workspace.Terrain.CustomPhysicalProperties = PhysicalProperties.new(1,1,1,0.25, 100)
@@ -151,6 +153,8 @@ end
 function unslippery()
 	workspace.Terrain.CustomPhysicalProperties = PhysicalProperties.new(1,1,1,0.45, 100)
 end
+
+
 
 
 while true do
