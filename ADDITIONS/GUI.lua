@@ -154,21 +154,20 @@ local function JIDI_fake_script() -- Main.LocalScript
 		end
 	end)
 	
-	if game.Workspace:WaitForChild("AX+2"):FindFirstChild("rain") == nil then
-		missingAssets = missingAssets + 1
-	end
-	if game.Workspace:WaitForChild("AX+2"):FindFirstChild("rain_loop") == nil then
-		missingAssets = missingAssets + 1
-	end
-	if game.Workspace:WaitForChild("AX+2"):FindFirstChild("Forest Ambience") == nil then
-		missingAssets = missingAssets + 1
-	end
-	if game.Workspace:WaitForChild("AX+2"):FindFirstChild("TerrainValues") == nil then
-		missingAssets = missingAssets + 1
-	end
 	
 	while wait(10) do
-	
+		if game.Workspace:WaitForChild("AX+2"):FindFirstChild("rain") == nil then
+			missingAssets = missingAssets + 1
+		end
+		if game.Workspace:WaitForChild("AX+2"):FindFirstChild("rain_loop") == nil then
+			missingAssets = missingAssets + 1
+		end
+		if game.Workspace:WaitForChild("AX+2"):FindFirstChild("Forest Ambience") == nil then
+			missingAssets = missingAssets + 1
+		end
+		if game.Workspace:WaitForChild("AX+2"):FindFirstChild("TerrainValues") == nil then
+			missingAssets = missingAssets + 1
+		end
 		script.Parent.PERFORMANCESTATS.CoreAssets.Text = "Missing Core Assets = "..missingAssets
 		script.Parent.PERFORMANCESTATS.RACINGloaded.Text = "Racing DLC Loaded = "..tostring(_G.RaceDLC)
 		script.Parent.PERFORMANCESTATS.loaded.Text = "Loaded = "..tostring(_G.Loaded)
