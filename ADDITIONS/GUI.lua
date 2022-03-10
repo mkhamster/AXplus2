@@ -11,6 +11,8 @@ local title = Instance.new("TextLabel")
 local loaded = Instance.new("TextLabel")
 local RACINGloaded = Instance.new("TextLabel")
 local CoreAssets = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -28,7 +30,7 @@ TextLabel.Text = "Accelerate X + 2"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
-TextLabel.TextTransparency = 0.840
+TextLabel.TextTransparency = 0.690
 TextLabel.TextWrapped = true
 
 TextLabel_2.Parent = Main
@@ -107,9 +109,35 @@ CoreAssets.TextSize = 14.000
 CoreAssets.TextWrapped = true
 CoreAssets.TextXAlignment = Enum.TextXAlignment.Left
 
+TextLabel_3.Parent = Main
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.436386764, 0, 0.906048059, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 25)
+TextLabel_3.Font = Enum.Font.Gotham
+TextLabel_3.Text = "Additional Packages Will Be Required Soon To Use AX+2!"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextTransparency = 0.620
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = Main
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.436386764, 0, 0.938042104, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 14)
+TextLabel_4.Font = Enum.Font.Gotham
+TextLabel_4.Text = "New assets coming!"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextTransparency = 0.620
+TextLabel_4.TextWrapped = true
+
 -- Scripts:
 
-local function BVXTMVO_fake_script() -- Main.LocalScript 
+local function JIDI_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService("UserInputService")
@@ -146,4 +174,4 @@ local function BVXTMVO_fake_script() -- Main.LocalScript
 		script.Parent.PERFORMANCESTATS.loaded.Text = "Loaded = "..tostring(_G.Loaded)
 	end
 end
-coroutine.wrap(BVXTMVO_fake_script)()
+coroutine.wrap(JIDI_fake_script)()
