@@ -332,13 +332,13 @@ TextLabel33.TextWrap = true
 TextLabel33.TextWrapped = true
 LocalScript34.Parent = Frame9
 table.insert(cors,sandbox(LocalScript34,function()
-local currentradio = 2
+local currentradio = 1
 local radios = {
 	[2] = "Chewsday Arena",
 	[1] = "NonStop FM",
 	[3] = "Deaf FM",
 }
-game:GetService("UserInputService").InputBegan:Connect(function(input)
+--[[game:GetService("UserInputService").InputBegan:Connect(function(input)
 	if input.KeyCode == Enum.KeyCode.RightControl then
 		if currentradio == 1 then
 			currentradio = 2
@@ -357,17 +357,18 @@ game:GetService("UserInputService").InputBegan:Connect(function(input)
 			--script.Parent.TextLabel.Text = "Silence"
 		end
 	end
-end)
+end)]]
 
 
 
-local random1 = math.random(1,(#script.Parent["Bri'ish ville Radio"]:GetChildren())-1)
-script.Parent["Bri'ish ville Radio"].currentlyPlaying.Value = script.Parent["Bri'ish ville Radio"]:GetChildren()[random1]
-local random2 = math.random(1,(#script.Parent["Chewsday Arena"]:GetChildren())-1)
-script.Parent["Chewsday Arena"].currentlyPlaying.Value = script.Parent["Chewsday Arena"]:GetChildren()[random1]
+--local random1 = math.random(1,(#script.Parent["Bri'ish ville Radio"]:GetChildren())-1)
+--script.Parent["Bri'ish ville Radio"].currentlyPlaying.Value = script.Parent["Bri'ish ville Radio"]:GetChildren()[random1]
+--local random2 = math.random(1,(#script.Parent["Chewsday Arena"]:GetChildren())-1)
+--script.Parent["Chewsday Arena"].currentlyPlaying.Value = script.Parent["Chewsday Arena"]:GetChildren()[random1]
+wait(1)
 local random3 = math.random(1,(#script.Parent["NonStop FM"]:GetChildren())-1)
 script.Parent["NonStop FM"].currentlyPlaying.Value = script.Parent["NonStop FM"]:GetChildren()[random1]
-
+wait(1)
 local prBVR = random1
 local prCDA = random2
 local prNFM = random3
