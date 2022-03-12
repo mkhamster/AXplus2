@@ -344,17 +344,17 @@ game:GetService("UserInputService").InputBegan:Connect(function(input)
 			currentradio = 2
 			script.Parent["NonStop FM"].currentlyPlaying.Value.Volume = 0
 			script.Parent["Chewsday Arena"].currentlyPlaying.Value.Volume = 2.1
-			script.Parent.TextLabel.Text = script.Parent["Chewsday Arena"].currentlyPlaying.Value.Name
+			--script.Parent.TextLabel.Text = script.Parent["Chewsday Arena"].currentlyPlaying.Value.Name
 		elseif currentradio == 3 then
 			currentradio = 1
 			script.Parent["NonStop FM"].currentlyPlaying.Value.Volume = 2.1
 			script.Parent["Chewsday Arena"].currentlyPlaying.Value.Volume = 0
-			script.Parent.TextLabel.Text = script.Parent["NonStop FM"].currentlyPlaying.Value.Name
+			--script.Parent.TextLabel.Text = script.Parent["NonStop FM"].currentlyPlaying.Value.Name
 		else
 			currentradio = 3
 			script.Parent["NonStop FM"].currentlyPlaying.Value.Volume = 0
 			script.Parent["Chewsday Arena"].currentlyPlaying.Value.Volume = 0
-			script.Parent.TextLabel.Text = "Silence"
+			--script.Parent.TextLabel.Text = "Silence"
 		end
 	end
 end)
