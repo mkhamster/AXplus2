@@ -328,11 +328,9 @@ TextLabel33.Text = "TrackName"
 TextLabel33.TextColor = BrickColor.new("Really black")
 TextLabel33.TextColor3 = Color3.new(0, 0, 0)
 TextLabel33.TextSize = 16
-TextLabel33.TextWrap = true
-TextLabel33.TextWrapped = true
 LocalScript34.Parent = Frame9
 table.insert(cors,sandbox(LocalScript34,function()
-local currentradio = 1
+local currentradio = 2
 local radios = {
 	[2] = "Chewsday Arena",
 	[1] = "NonStop FM",
@@ -344,43 +342,42 @@ local radios = {
 			currentradio = 2
 			script.Parent["NonStop FM"].currentlyPlaying.Value.Volume = 0
 			script.Parent["Chewsday Arena"].currentlyPlaying.Value.Volume = 2.1
-			--script.Parent.TextLabel.Text = script.Parent["Chewsday Arena"].currentlyPlaying.Value.Name
+			script.Parent.TextLabel.Text = script.Parent["Chewsday Arena"].currentlyPlaying.Value.Name
 		elseif currentradio == 3 then
 			currentradio = 1
 			script.Parent["NonStop FM"].currentlyPlaying.Value.Volume = 2.1
 			script.Parent["Chewsday Arena"].currentlyPlaying.Value.Volume = 0
-			--script.Parent.TextLabel.Text = script.Parent["NonStop FM"].currentlyPlaying.Value.Name
+			script.Parent.TextLabel.Text = script.Parent["NonStop FM"].currentlyPlaying.Value.Name
 		else
 			currentradio = 3
 			script.Parent["NonStop FM"].currentlyPlaying.Value.Volume = 0
 			script.Parent["Chewsday Arena"].currentlyPlaying.Value.Volume = 0
-			--script.Parent.TextLabel.Text = "Silence"
+			script.Parent.TextLabel.Text = "Silence"
 		end
 	end
 end)]]
 
 
 
---local random1 = math.random(1,(#script.Parent["Bri'ish ville Radio"]:GetChildren())-1)
---script.Parent["Bri'ish ville Radio"].currentlyPlaying.Value = script.Parent["Bri'ish ville Radio"]:GetChildren()[random1]
---local random2 = math.random(1,(#script.Parent["Chewsday Arena"]:GetChildren())-1)
---script.Parent["Chewsday Arena"].currentlyPlaying.Value = script.Parent["Chewsday Arena"]:GetChildren()[random1]
-wait(1)
+--[[local random1 = math.random(1,(#script.Parent["Bri'ish ville Radio"]:GetChildren())-1)
+script.Parent["Bri'ish ville Radio"].currentlyPlaying.Value = script.Parent["Bri'ish ville Radio"]:GetChildren()[random1]
+local random2 = math.random(1,(#script.Parent["Chewsday Arena"]:GetChildren())-1)
+script.Parent["Chewsday Arena"].currentlyPlaying.Value = script.Parent["Chewsday Arena"]:GetChildren()[random1]
 local random3 = math.random(1,(#script.Parent["NonStop FM"]:GetChildren())-1)
-script.Parent["NonStop FM"].currentlyPlaying.Value = script.Parent["NonStop FM"]:GetChildren()[random1]
-wait(1)
-local prBVR = random1
-local prCDA = random2
-local prNFM = random3
+script.Parent["NonStop FM"].currentlyPlaying.Value = script.Parent["NonStop FM"]:GetChildren()[random1]]]
 
-if currentradio == 1 then
+--[[local prBVR = random1
+local prCDA = random2
+local prNFM = random3]]
+
+--[[if currentradio == 1 then
 	script.Parent["NonStop FM"].currentlyPlaying.Value.Volume = 2.1
 elseif currentradio == 2 then
 	script.Parent["Chewsday Arena"].currentlyPlaying.Value.Volume = 2.1
-end
+end]]
 
 
-script.Parent["NonStop FM"].currentlyPlaying.Value:Play()
+--[[script.Parent["NonStop FM"].currentlyPlaying.Value:Play()
 script.Parent["Chewsday Arena"].currentlyPlaying.Value:Play()
 script.Parent["Bri'ish ville Radio"].currentlyPlaying.Value:Play()
 
@@ -459,7 +456,20 @@ script.Parent["Bri'ish ville Radio"].currentlyPlaying.Value.Ended:Connect(functi
 		script.Parent["Bri'ish ville Radio"].currentlyPlaying.Value:Play()
 		changingBVR = false
 	end
-end)
+end)]]
+
+wait(20)
+
+while true do
+	script.Parent["NonStop FM"]["Deadmau5 - At Play Vol.5"].Volume = 2.1
+	script.Parent["NonStop FM"]["Deadmau5 - At Play Vol.5"]:Play()
+	script.Parent.TextLabel.Text = "Deadmau5 - At Play Vol.5"
+	wait(3165.568)
+	script.Parent["NonStop FM"]["Moe Shop - Pool Osaka Liveshow"].Volume = 2.1
+	script.Parent["NonStop FM"]["Moe Shop - Pool Osaka Liveshow"]:Play()
+	script.Parent.TextLabel.Text = "Moe Shop - Pool Osaka Liveshow"
+	wait(2830.432)
+end
 end))
 Frame35.Name = "MISSING"
 Frame35.Parent = ScreenGui0
