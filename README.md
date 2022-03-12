@@ -24,10 +24,10 @@ If the developer does not want this tool to exist, it can be removed on request
 
 Everything is open-source, virus-free
 
-![IMG1](https://github.com/mkhamster/AXplus2/blob/main/IMAGES/ALPHA_IMG1.png)
+![IMG1](https://cdn.discordapp.com/attachments/808811107765977170/952189349330583653/RobloxScreenShot20220312_150017397.png)
 
-![IMG2](https://github.com/mkhamster/AXplus2/blob/main/IMAGES/ALPHA_IMG2.png)
+![image](https://user-images.githubusercontent.com/68155220/158018980-f378e662-9e99-41ce-a454-6f9a4e3ee80d.png)
 
-![IMG3](https://github.com/mkhamster/AXplus2/blob/main/IMAGES/ALPHA_IMG3.png)
+![image](https://user-images.githubusercontent.com/68155220/158018991-3bc59173-9557-4316-ab42-39e78647a78b.png)
 
 
