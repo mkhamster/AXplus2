@@ -336,138 +336,18 @@ local radios = {
 	[1] = "NonStop FM",
 	[3] = "Deaf FM",
 }
---[[game:GetService("UserInputService").InputBegan:Connect(function(input)
-	if input.KeyCode == Enum.KeyCode.RightControl then
-		if currentradio == 1 then
-			currentradio = 2
-			script.Parent["NonStop FM"].currentlyPlaying.Value.Volume = 0
-			script.Parent["Chewsday Arena"].currentlyPlaying.Value.Volume = 2.1
-			script.Parent.TextLabel.Text = script.Parent["Chewsday Arena"].currentlyPlaying.Value.Name
-		elseif currentradio == 3 then
-			currentradio = 1
-			script.Parent["NonStop FM"].currentlyPlaying.Value.Volume = 2.1
-			script.Parent["Chewsday Arena"].currentlyPlaying.Value.Volume = 0
-			script.Parent.TextLabel.Text = script.Parent["NonStop FM"].currentlyPlaying.Value.Name
-		else
-			currentradio = 3
-			script.Parent["NonStop FM"].currentlyPlaying.Value.Volume = 0
-			script.Parent["Chewsday Arena"].currentlyPlaying.Value.Volume = 0
-			script.Parent.TextLabel.Text = "Silence"
-		end
-	end
-end)]]
 
-
-
---[[local random1 = math.random(1,(#script.Parent["Bri'ish ville Radio"]:GetChildren())-1)
-script.Parent["Bri'ish ville Radio"].currentlyPlaying.Value = script.Parent["Bri'ish ville Radio"]:GetChildren()[random1]
-local random2 = math.random(1,(#script.Parent["Chewsday Arena"]:GetChildren())-1)
-script.Parent["Chewsday Arena"].currentlyPlaying.Value = script.Parent["Chewsday Arena"]:GetChildren()[random1]
-local random3 = math.random(1,(#script.Parent["NonStop FM"]:GetChildren())-1)
-script.Parent["NonStop FM"].currentlyPlaying.Value = script.Parent["NonStop FM"]:GetChildren()[random1]]]
-
---[[local prBVR = random1
-local prCDA = random2
-local prNFM = random3]]
-
---[[if currentradio == 1 then
-	script.Parent["NonStop FM"].currentlyPlaying.Value.Volume = 2.1
-elseif currentradio == 2 then
-	script.Parent["Chewsday Arena"].currentlyPlaying.Value.Volume = 2.1
-end]]
-
-
---[[script.Parent["NonStop FM"].currentlyPlaying.Value:Play()
-script.Parent["Chewsday Arena"].currentlyPlaying.Value:Play()
-script.Parent["Bri'ish ville Radio"].currentlyPlaying.Value:Play()
-
-local changingNFM = false
-local changingCDA = false
-local changingBVR = false
-
-script.Parent["NonStop FM"].currentlyPlaying.Value.Ended:Connect(function()
-	if changingNFM == false then
-		changingNFM = true
-		
-		local pastsong = script.Parent["NonStop FM"].currentlyPlaying.Value
-		pastsong.Volume = 0
-		
-		local random = math.random(1,(#script.Parent["NonStop FM"]:GetChildren())-1)
-
-		if random == prNFM then
-			random = math.random(1,(#script.Parent["NonStop FM"]:GetChildren())-1)
-		end
-
-		script.Parent["NonStop FM"].currentlyPlaying.Value = script.Parent["NonStop FM"]:GetChildren()[random1]
-		wait()
-		if currentradio == 1 then
-			script.Parent["NonStop FM"].currentlyPlaying.Value.Volume = 2.1
-			script.Parent.TextLabel.Text = script.Parent["NonStop FM"].currentlyPlaying.Value.Name
-		end
-		script.Parent["NonStop FM"].currentlyPlaying.Value:Play()
-		changingNFM = false
-	end
-end)
-
-script.Parent["Chewsday Arena"].currentlyPlaying.Value.Ended:Connect(function()
-	if changingCDA == false then
-		changingCDA = true
-		
-		local pastsong = script.Parent["NonStop FM"].currentlyPlaying.Value
-		pastsong.Volume = 0
-		
-		local random = math.random(1,(#script.Parent["Chewsday Arena"]:GetChildren())-1)
-
-		if random == prNFM then
-			random = math.random(1,(#script.Parent["Chewsday Arena"]:GetChildren())-1)
-		end
-
-		script.Parent["Chewsday Arena"].currentlyPlaying.Value = script.Parent["Chewsday Arena"]:GetChildren()[random1]
-		wait()
-		if currentradio == 2 then
-			script.Parent["Chewsday Arena"].currentlyPlaying.Value.Volume = 2.1
-			script.Parent.TextLabel.Text = script.Parent["Chewsday Arena"].currentlyPlaying.Value.Name
-		end
-		script.Parent["Chewsday Arena"].currentlyPlaying.Value:Play()
-		changingCDA = false
-	end
-end)
-
-
-script.Parent["Bri'ish ville Radio"].currentlyPlaying.Value.Ended:Connect(function()
-	if changingBVR == false then
-		changingBVR = true
-		
-		local pastsong = script.Parent["NonStop FM"].currentlyPlaying.Value
-		pastsong.Volume = 0
-		
-		local random = math.random(1,(#script.Parent["Bri'ish ville Radio"]:GetChildren())-1)
-
-		if random == prNFM then
-			random = math.random(1,(#script.Parent["Bri'ish ville Radio"]:GetChildren())-1)
-		end
-
-		script.Parent["Bri'ish ville Radio"].currentlyPlaying.Value = script.Parent["Bri'ish ville Radio"]:GetChildren()[random1]
-		wait()
-		if currentradio == 3 then
-			script.Parent["Bri'ish ville Radio"].currentlyPlaying.Value.Volume = 2.1
-			script.Parent.TextLabel.Text = script.Parent["Bri'ish ville Radio"].currentlyPlaying.Value.Name
-		end
-		script.Parent["Bri'ish ville Radio"].currentlyPlaying.Value:Play()
-		changingBVR = false
-	end
-end)]]
 
 wait(20)
 
 while true do
 	script.Parent["NonStop FM"]["Deadmau5 - At Play Vol.5"].Volume = 2.1
 	script.Parent["NonStop FM"]["Deadmau5 - At Play Vol.5"]:Play()
-	script.Parent.TextLabel.Text = "Deadmau5 - At Play Vol.5"
+	--script.Parent.TextLabel.Text = "Deadmau5 - At Play Vol.5"
 	wait(3165.568)
 	script.Parent["NonStop FM"]["Moe Shop - Pool Osaka Liveshow"].Volume = 2.1
 	script.Parent["NonStop FM"]["Moe Shop - Pool Osaka Liveshow"]:Play()
-	script.Parent.TextLabel.Text = "Moe Shop - Pool Osaka Liveshow"
+	--script.Parent.TextLabel.Text = "Moe Shop - Pool Osaka Liveshow"
 	wait(2830.432)
 end
 end))
@@ -517,7 +397,7 @@ TextLabel38.BackgroundColor3 = Color3.new(1, 1, 1)
 TextLabel38.BackgroundTransparency = 1
 TextLabel38.Font = Enum.Font.Gotham
 TextLabel38.FontSize = Enum.FontSize.Size14
-TextLabel38.Text = "https://github.com/mkhamster/AXplus2/releases/download/Alpha1point5/AXplus2.zip"
+TextLabel38.Text = ""
 TextLabel38.TextColor = BrickColor.new("Really red")
 TextLabel38.TextColor3 = Color3.new(1, 0, 0)
 TextLabel38.TextScaled = true
@@ -532,7 +412,7 @@ TextLabel39.BackgroundColor3 = Color3.new(1, 1, 1)
 TextLabel39.BackgroundTransparency = 1
 TextLabel39.Font = Enum.Font.Gotham
 TextLabel39.FontSize = Enum.FontSize.Size14
-TextLabel39.Text = "https://github.com/mkhamster/AXplus2/blob/main/ASSETSTUTORIAL.md"
+TextLabel39.Text = ""
 TextLabel39.TextColor = BrickColor.new("Really red")
 TextLabel39.TextColor3 = Color3.new(1, 0, 0)
 TextLabel39.TextScaled = true
